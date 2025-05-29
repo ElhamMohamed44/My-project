@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 4e840cadf4e43da4fb4c720fe3f17b70,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 5d7eed1f1543e334983de5ea45948c46,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 2d75332406501c444b4723bf01151cfe,
+      type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 8345251e1ed1b4149859ed7ccc91413a,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 47820bba69f28d64a87070c6c76d3de0,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b4317ded7209dbf4a85496e50a6eb059,
+      type: 2}
