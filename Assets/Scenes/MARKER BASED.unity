@@ -137,7 +137,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179064886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5c72d829c2fd3794892240137a976c43, type: 2}
   m_CullingMode: 0
@@ -192,6 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 242197677}
   - component: {fileID: 242197676}
+  - component: {fileID: 242197678}
   m_Layer: 0
   m_Name: 'rotator '
   m_TagString: Untagged
@@ -206,7 +207,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242197675}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: -7711177865019681348, guid: c7cc20882e6ca854c80e38df0d7981c7,
     type: 2}
@@ -223,13 +224,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242197675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1194.8961, y: -340.38345, z: 783.1702}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1150.4961, y: -340.3291, z: 781.8333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 1777873610}
+  m_Father: {fileID: 2099069394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &242197678
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242197675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68279a23ab878234ab78ebb760a24f6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &400900273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1317,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2021178655527167927, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2021178655527167927, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2021178655527167927, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1853094968961178454, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d,
+        type: 3}
+      propertyPath: field of view
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: -1853094968961178454, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d,
+        type: 3}
+      propertyPath: m_FocalLength
+      value: 9.8920355
+      objectReference: {fileID: 0}
     - target: {fileID: -1853094968961178454, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -1400,7 +1448,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -2572967989333021709, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d, type: 3}
+    - {fileID: -3824974996824756987, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d, type: 3}
+    - {fileID: -7769951421894727821, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d, type: 3}
+    - {fileID: -2659105463809956832, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d, type: 3}
+    - {fileID: 65702495048144492, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e3adc9ad81f1cb4aa2b7027dc541c2d, type: 3}
@@ -1490,12 +1543,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2099069394}
+    m_TransformParent: {fileID: 242197677}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 82a8ec266e5741843980e6d50f88fb79,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5399997
+      value: 2.5399995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82a8ec266e5741843980e6d50f88fb79,
         type: 3}
@@ -1505,17 +1558,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 82a8ec266e5741843980e6d50f88fb79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -130.5
+      value: -1280.9961
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82a8ec266e5741843980e6d50f88fb79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0543635
+      value: 340.38345
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82a8ec266e5741843980e6d50f88fb79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3369308
+      value: -783.1702
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82a8ec266e5741843980e6d50f88fb79,
         type: 3}
@@ -1645,7 +1698,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777873609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5c72d829c2fd3794892240137a976c43, type: 2}
   m_CullingMode: 0
@@ -1821,7 +1874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1777873610}
+  - {fileID: 242197677}
   - {fileID: 1560312553}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1836,4 +1889,3 @@ SceneRoots:
   - {fileID: 787459403}
   - {fileID: 400900277}
   - {fileID: 1584159596}
-  - {fileID: 242197677}
