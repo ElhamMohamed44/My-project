@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class CarSwitcher : MonoBehaviour
 {
-    public GameObject[] cars;
+    public GameObject mercedes;
+    public GameObject mclaren;
 
-    public void SelectCar(int index)
+    public void ShowMercedes()
     {
-        for (int i = 0; i < cars.Length; i++)
-        {
-            cars[i].SetActive(i == index);
-        }
+        mercedes.SetActive(true);
+        mclaren.SetActive(false);
+    }
+
+    public void ShowMcLaren()
+    {
+        mercedes.SetActive(false);
+        mclaren.SetActive(true);
     }
 }
